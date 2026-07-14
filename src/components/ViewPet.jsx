@@ -7,7 +7,7 @@ const ViewPet = () => {
     const [data, changeData] = useState([])
 
     const fetchData = () => {
-        axios.get("http://localhost:3000/view-pet").then(
+        axios.post("http://localhost:3000/view-pet").then(
             (response) => {
                 changeData(response.data)
             }
